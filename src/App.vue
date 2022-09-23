@@ -24,9 +24,8 @@ supabase.auth.onAuthStateChange((event, session) => {
   if(session==null){ 
     document.getElementById('status').innerHTML='You are not logged !!!'; 
   } else{ 
-    //alert('session value: ' + JSON.stringify(session)) 
-    document.getElementById('status').innerHTML='You are logged with the 
-email: ' + session.user.email; 
+    alert('session value: ' + JSON.stringify(session)) 
+    document.getElementById('status').innerHTML='You are logged with the email: ' + session.user.email; 
   } 
 })
 
